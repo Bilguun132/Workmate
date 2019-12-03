@@ -13,6 +13,12 @@
 		05C7426923961CC200229294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C7426723961CC200229294 /* Main.storyboard */; };
 		05C7426B23961CC300229294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C7426A23961CC300229294 /* Assets.xcassets */; };
 		05C7426E23961CC300229294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C7426C23961CC300229294 /* LaunchScreen.storyboard */; };
+		05C7427923961D0F00229294 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7427823961D0F00229294 /* APIService.swift */; };
+		05C7427B23961FB400229294 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7427A23961FB400229294 /* User.swift */; };
+		05C7427E239637A100229294 /* ClockInOutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7427D239637A100229294 /* ClockInOutButton.swift */; };
+		05C7428123964B7500229294 /* OverlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C7428023964B7500229294 /* OverlayViewController.swift */; };
+		05C742832396523D00229294 /* ClockInOutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C742822396523D00229294 /* ClockInOutResponse.swift */; };
+		05C742852396587F00229294 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C742842396587F00229294 /* URLSession+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		05C7426A23961CC300229294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05C7426D23961CC300229294 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05C7426F23961CC300229294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C7427823961D0F00229294 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		05C7427A23961FB400229294 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		05C7427D239637A100229294 /* ClockInOutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInOutButton.swift; sourceTree = "<group>"; };
+		05C7428023964B7500229294 /* OverlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayViewController.swift; sourceTree = "<group>"; };
+		05C742822396523D00229294 /* ClockInOutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockInOutResponse.swift; sourceTree = "<group>"; };
+		05C742842396587F00229294 /* URLSession+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,61 @@
 		05C7426023961CC200229294 /* Workmate */ = {
 			isa = PBXGroup;
 			children = (
+				05C7427F23964B4900229294 /* VC */,
+				05C7427C2396379100229294 /* Components */,
+				05C7427723961CE100229294 /* Extensions */,
+				05C7427623961CD600229294 /* Services */,
+				05C7427523961CCA00229294 /* Models */,
 				05C7426123961CC200229294 /* AppDelegate.swift */,
 				05C7426323961CC200229294 /* SceneDelegate.swift */,
-				05C7426523961CC200229294 /* ViewController.swift */,
 				05C7426723961CC200229294 /* Main.storyboard */,
 				05C7426A23961CC300229294 /* Assets.xcassets */,
 				05C7426C23961CC300229294 /* LaunchScreen.storyboard */,
 				05C7426F23961CC300229294 /* Info.plist */,
 			);
 			path = Workmate;
+			sourceTree = "<group>";
+		};
+		05C7427523961CCA00229294 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05C7427A23961FB400229294 /* User.swift */,
+				05C742822396523D00229294 /* ClockInOutResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05C7427623961CD600229294 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				05C7427823961D0F00229294 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		05C7427723961CE100229294 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05C742842396587F00229294 /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05C7427C2396379100229294 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				05C7427D239637A100229294 /* ClockInOutButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		05C7427F23964B4900229294 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				05C7426523961CC200229294 /* ViewController.swift */,
+				05C7428023964B7500229294 /* OverlayViewController.swift */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +198,12 @@
 			files = (
 				05C7426623961CC200229294 /* ViewController.swift in Sources */,
 				05C7426223961CC200229294 /* AppDelegate.swift in Sources */,
+				05C742832396523D00229294 /* ClockInOutResponse.swift in Sources */,
+				05C7428123964B7500229294 /* OverlayViewController.swift in Sources */,
+				05C7427923961D0F00229294 /* APIService.swift in Sources */,
+				05C742852396587F00229294 /* URLSession+Extension.swift in Sources */,
+				05C7427B23961FB400229294 /* User.swift in Sources */,
+				05C7427E239637A100229294 /* ClockInOutButton.swift in Sources */,
 				05C7426423961CC200229294 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
